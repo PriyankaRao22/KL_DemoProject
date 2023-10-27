@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.CustomerPetInfo">
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <children>
+      <TableView fx:id="CustomerPetDetails" layoutX="10.0" layoutY="108.0" prefHeight="378.0" prefWidth="584.0">
+        <columns>
+          <TableColumn fx:id="CType" prefWidth="103.0" text="Type" />
+            <TableColumn fx:id="CBreed" prefWidth="120.0" text="Breed" />
+            <TableColumn fx:id="CAge" prefWidth="117.0" text="Age" />
+            <TableColumn fx:id="CPrice" minWidth="4.0" prefWidth="127.0" text="Price" />
+            <TableColumn fx:id="CAvailability" minWidth="4.0" prefWidth="127.0" text="Availability" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="73.0" mnemonicParsing="false" onAction="#PetDetailsOnAction" prefHeight="25.0" prefWidth="185.0" style="-fx-background-color: Orange;" text="Product Details" />
+      <Button fx:id="CPIBack" layoutX="530.0" layoutY="12.0" mnemonicParsing="false" onAction="#CustomerPetBackOnAction" style="-fx-background-color: orange;" text="Back" />
+      <Button layoutX="26.0" layoutY="12.0" mnemonicParsing="false" onAction="#addToCartOnActionBuuton" prefHeight="25.0" prefWidth="102.0" style="-fx-background-color: orange;" text="Add To Cart" />
+      <Label fx:id="CPetMessage" layoutX="128.0" layoutY="37.0" prefHeight="25.0" prefWidth="314.0" />
+   </children>
+</AnchorPane>

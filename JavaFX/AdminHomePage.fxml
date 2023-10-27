@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.AdminHomePage">
+   <children>
+      <AnchorPane layoutX="-3.0" prefHeight="500.0" prefWidth="203.0" style="-fx-background-color: orange;">
+         <children>
+            <Button layoutX="41.0" layoutY="287.0" mnemonicParsing="false" onAction="#adminHomUserInfoOnAction" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: orange;" text="UserInfo">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="24.0" layoutY="329.0" mnemonicParsing="false" onAction="#customerInfoOnAction" prefHeight="31.0" prefWidth="117.0" style="-fx-background-color: orange;" text="CustomerInfo">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="31.0" layoutY="387.0" mnemonicParsing="false" onAction="#logOutOnAction" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: orange;" text="LogOut">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="40.0" layoutY="182.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: orange;" text="Home">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="AdminPetInfo" layoutX="40.0" layoutY="235.0" mnemonicParsing="false" onAction="#adminHomePet_InfoOnAction" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: orange;" text="PetInfo">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TextField layoutX="216.0" layoutY="15.0" prefHeight="82.0" prefWidth="374.0" />
+      <Button layoutX="227.0" layoutY="20.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="101.0" style="-fx-background-color: White;" text="Pet Shope">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="220.0" layoutY="45.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="318.0" style="-fx-background-color: White;" text="We serve you with high quality service and nice care of Pet.">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Button layoutX="220.0" layoutY="192.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="139.0" style="-fx-background-color: orange;" text="            Cat" textFill="#000000fa">
+         <font>
+            <Font name="Constantia Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button layoutX="403.0" layoutY="192.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="139.0" style="-fx-background-color: orange;" text="             Dog" textFill="#000000fa">
+         <font>
+            <Font name="Constantia Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="220.0" layoutY="301.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="139.0" style="-fx-background-color: orange;" text="             Cow" textFill="#000000fa">
+         <font>
+            <Font name="Constantia Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="221.0" layoutY="128.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="215.0" style="-fx-background-color: orange;" text="Pet Catagories">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="AdminHomeCancle" layoutX="513.0" layoutY="441.0" mnemonicParsing="false" onAction="#adminHhomeCancleOnAction" style="-fx-background-color: orange;" text="Cancle" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="222.0" fitWidth="159.0" layoutX="14.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\PriyankaRao\IdeaProjects\JavaFxProject\src\Image\Pet-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="62.0" layoutX="530.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\PriyankaRao\IdeaProjects\JavaFxProject\src\Image\Pet-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="69.0" fitWidth="68.0" layoutX="412.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\PriyankaRao\IdeaProjects\JavaFxProject\src\Image\Dog-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="68.0" layoutX="228.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\PriyankaRao\IdeaProjects\JavaFxProject\src\Image\Cow-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="77.0" layoutX="227.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\PriyankaRao\IdeaProjects\JavaFxProject\src\Image\Cat-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.AdminPetInfo">
+   <children>
+      <Label layoutX="48.0" layoutY="33.0" prefHeight="25.0" prefWidth="63.0" text="ID">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="257.0" layoutY="33.0" prefHeight="25.0" prefWidth="63.0" text="Type">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="464.0" layoutY="33.0" prefHeight="25.0" prefWidth="63.0" text="Breed">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="111.0" prefHeight="25.0" prefWidth="63.0" text="Age">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="225.0" layoutY="111.0" prefHeight="25.0" prefWidth="63.0" text="Price">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Id" layoutX="14.0" layoutY="66.0" prefHeight="25.0" prefWidth="95.0" promptText="ID" />
+      <TextField fx:id="PetType" layoutX="232.0" layoutY="66.0" prefHeight="25.0" prefWidth="95.0" promptText="Type" />
+      <TextField fx:id="PetBreed" layoutX="426.0" layoutY="66.0" prefHeight="25.0" prefWidth="95.0" promptText="Type" />
+      <TextField fx:id="PetAge" layoutX="14.0" layoutY="145.0" prefHeight="25.0" prefWidth="95.0" promptText="Age" />
+      <TextField fx:id="PetPrice" layoutX="193.0" layoutY="145.0" prefHeight="25.0" prefWidth="120.0" promptText="Price" />
+      <Label layoutX="407.0" layoutY="111.0" prefHeight="25.0" prefWidth="114.0" text="Availability">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="PetAvailability" layoutX="393.0" layoutY="145.0" prefHeight="25.0" prefWidth="120.0" promptText="Availability" />
+      <Button layoutX="14.0" layoutY="191.0" mnemonicParsing="false" onAction="#addButtonOnAction" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: ORange;" text="Add" />
+      <Button layoutX="124.0" layoutY="191.0" mnemonicParsing="false" onAction="#handleUpdateButton" onMouseClicked="#handleRowSelection" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: ORange;" text="Update" />
+      <Button layoutX="253.0" layoutY="191.0" mnemonicParsing="false" onAction="#deleteButtonOnAction" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: ORange;" text="Delete" />
+      <Button fx:id="GetDataById" layoutX="369.0" layoutY="191.0" mnemonicParsing="false" onAction="#getByIDOnAction" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: ORange;" text="GetByID" />
+      <Button fx:id="GetAll" layoutX="491.0" layoutY="191.0" mnemonicParsing="false" onAction="#getAllOnAction" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: ORange;" text="GetAll" />
+      <TableView fx:id="petTableView" layoutX="13.0" layoutY="235.0" onMouseClicked="#handleRowSelection" prefHeight="251.0" prefWidth="581.0">
+        <columns>
+          <TableColumn fx:id="petId" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="type" prefWidth="116.0" text="Type" />
+            <TableColumn fx:id="breed" prefWidth="123.0" text="Breed" />
+            <TableColumn fx:id="age" prefWidth="79.0" text="Age" />
+            <TableColumn fx:id="price" prefWidth="88.0" text="Price" />
+            <TableColumn fx:id="availability" prefWidth="89.0" text="Availability" />
+        </columns>
+      </TableView>
+      <Label fx:id="MessageDisplay1" layoutX="162.0" layoutY="19.0" prefHeight="17.0" prefWidth="302.0" />
+      <Button fx:id="APBack" layoutX="13.0" layoutY="2.0" mnemonicParsing="false" onAction="#aPBackOnAction" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: Orange;" text="Back" />
+   </children>
+</AnchorPane>
